@@ -18,4 +18,7 @@ async def on_message(M):
 			await client.send_message(M.channel, "Done.")
 			with open("o7.dat", "w") as f:
 				print(chan_map, file=f)
-client.run("token")
+with open("token", "r") as f:
+	TOKEN = f.read().rstrip()
+
+client.run(TOKEN)
