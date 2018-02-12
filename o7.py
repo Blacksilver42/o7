@@ -18,4 +18,4 @@ async def on_message(M):
 			await client.send_message(M.channel, "Done.")
 			with open("o7.dat", "w") as f:
 				print(chan_map, file=f)
-client.run("NDEyMzI0MDc3NDYyNzQ5MTk0.DWIolQ.aVH2RwCOgdzHsx-8TSu1aCmMENA")
+client.run("token")
